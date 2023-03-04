@@ -15,11 +15,9 @@
     <title>스파르타코딩클럽 | 부트스트랩 연습하기</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
-
         * {
             font-family: 'Gowun Dodum', sans-serif;
         }
-
         .mytitle {
             background-color: green;
             color: white;
@@ -38,7 +36,6 @@
 
 
         }
-
         .mytitle>button {
             width: 250px;
             height: 50px;
@@ -48,20 +45,16 @@
             border-radius: 50px;
             margin-top: 20px;
         }
-
         .mytitle>button:hover {
             border: 2px solid white;
         }
-
         .mycomment {
             color: gray;
         }
-
         .mycards {
             margin: 30px auto 30px auto;
             width: 1200px;
         }
-
         .mypost {
             width: 500px;
 
@@ -71,19 +64,15 @@
             box-shadow: 0px 0px 3px 0px gray;
         }
         .mybtn {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;
-
-            margin-top: 20px;
+            width: 300px;
+            margin: auto;
+            text-align: center;
         }
-        .mybtn > button{
-            margin-right: 10px;
+        .mybtn>button {
+            margin: 10px 10px 0px 10px;
         }
     </style>
 </head>
-
 <body>
     <div class="mytitle">
         <h1>내 생애 최고의 영화들</h1>
@@ -93,6 +82,17 @@
         <div class="form-floating mb-3">
             <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
             <label for="floatingInput">영화URL</label>
+        </div>
+        <div class="input-group mb-3">
+            <label class="input-group-text" for="inputGroupSelect01">별점</label>
+            <select class="form-select" id="inputGroupSelect01">
+                <option selected>--선택하기--</option>
+                <option value="1">⭐(1점)</option>
+                <option value="2">⭐⭐(2점)</option>
+                <option value="3">⭐⭐⭐(3점)</option>
+                <option value="4">⭐⭐⭐⭐(4점)</option>
+                <option value="5">⭐⭐⭐⭐⭐(5점)</option>
+            </select>
         </div>
         <div class="form-floating">
             <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
@@ -170,8 +170,6 @@
                 </div>
             </div>
         </div>
-
     </div>
 </body>
-
 </html>
